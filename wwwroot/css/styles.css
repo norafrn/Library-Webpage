@@ -1,0 +1,433 @@
+/*
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This main styles file is to be used to style markup for Assignment 4.
+ * 
+ */
+
+ /*Variables used for fonts and color schemes */
+ 
+ :root {
+    --bg-color: rgb(77,29,16);
+    --text-color: rgb(255,246,235);
+    --detail-color: rgb(230,141,105);
+    --dark-detail-color: rgb(137,56,37);
+    --light-detail-color: rgb(223, 177, 129);
+    --main-font: 'Spectral';
+    --heading-font: 'Spectral SC';
+}
+
+body {
+    width: 80vw;
+    margin: auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.pg-banner {
+    width: 80vw;
+    height: 16vh;
+    color: var(--bg-color);
+    background-color: var(--light-detail-color);
+    font-family: var(--heading-font);
+    
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.pg-banner #logo-img {
+    height: 90%;
+    /*top right bottom left*/
+    margin: auto 0 auto 3px;
+    border: 2px solid black;
+}
+
+.primary-nav li{
+    list-style: none;
+    display: inline;
+    margin: 1em;
+}
+
+.primary-nav a {
+    color: var(--bg-color);
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.primary-nav a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#home-img img {
+    margin: auto;
+    margin-top: 2em;
+    width: 100%;
+    opacity: 0.8;
+}
+
+#table #table-heading {
+    font-family: var(--heading-font);
+    border-bottom: 2px solid var(--detail-color);
+    padding: 1em;
+}
+
+#books-table th{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    text-align: center;
+    padding: 1em;
+}
+
+#books-table td{
+    padding: 1em;
+    font-family: var(--main-font);
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--dark-detail-color);
+}
+
+.filtered-search form {
+    float: left;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    /* background-color: var(--dark-detail-color); */
+    border-radius: 10px;
+}
+
+.filtered-search input {
+    padding: 0.5em;
+    background-color: var(--text-color);
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.filtered-search label {
+    font-family: var(--main-font);
+    font-weight: bolder;
+    margin-right: 3px;
+}
+
+.filtered-search button {
+    padding: 0.5em;
+    background-color: var(--light-detail-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#jump-up button{
+    margin: 1em;
+    padding: 0.5em;
+    background-color: var(--light-detail-color);
+    font-family: var(--heading-font);
+    border: 2px solid black;
+    border-radius: 10px;
+
+    position:fixed;
+    bottom: 5vh;
+    right: 10vw;
+}
+
+#jump-up a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+#jump-up button:hover {
+    border: 4px solid black;
+}
+
+.secondary-nav {
+    width: 35vw;
+    margin: auto;
+    margin-top: 2em;
+    color: black;
+    background-color: var(--light-detail-color);
+    font-family: var(--main-font);
+    font-weight: bolder;
+}
+
+.secondary-nav li {
+    list-style: none;
+    display: inline;
+}
+
+.secondary-nav img {
+    width: 4vw;
+    /* opacity: 0.7; */
+    margin: 10px;
+    display: inline;
+    border: 2px solid var(--dark-detail-color);
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.secondary-nav img:hover {
+    border: 5px solid var(--bg-color);
+    border-radius: 10px;
+}
+
+#pdf-files {
+    margin-top: 20vh;
+
+    display: grid;
+    grid-template-areas: "one two three"
+                         "one two three"
+                         "one two three";
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: bolder;
+}
+
+h3 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section#wireframes {
+    grid-area: one;
+}
+
+.section#design {
+    grid-area: two;
+}
+
+.section#code-files {
+    grid-area: three;
+}
+
+article.sub-section {
+    width: 50%;
+    border: 2px solid var(--detail-color);
+    margin: 1em;
+    padding: 0.5em 1em 1em 2em;
+    
+}
+
+#wireframes h2 {
+    margin-right: -2px;
+}
+
+#code-files h2 {
+    margin-right: 1em;
+}
+
+.sub-section h3 {
+    display: block;
+    font-family: var(--heading-font);
+    text-decoration: none;
+    text-align: left;
+}
+
+.sub-section a{
+    display: list-item;
+    font-family: var(--main-font);
+    color: var(--light-detail-color);
+}
+
+
+@media screen and (max-width: 840px) {
+    body {
+        width: 100vw;
+    }
+
+    .pg-banner {
+        width: 100vw;
+        height: 25vh;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .pg-banner #logo-img {
+        width: 100px;
+        height: 100px;
+        margin: auto 0 auto 3px;
+        border: 2px solid black;
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+
+    .pg-banner #main-title {
+        margin: 0.5em;
+        align-self: flex-end;
+    }
+    
+    .primary-nav ul {
+        padding: 0;
+        margin-right: 10px;
+    }
+
+    .primary-nav li{
+        list-style: disc;
+        display: block;
+        text-align: left;
+    }
+    
+    .primary-nav a {
+        color: var(--bg-color);
+        font-weight: bolder;
+        font-style: italic;
+        display: list-item;
+    }
+    
+    .primary-nav a:hover {
+        color: black;
+        text-decoration: none;
+    }
+    
+    #home-img img {
+        margin: auto;
+        margin-top: 2em;
+        width: 100%;
+        opacity: 0.8;
+    }
+
+    #pdf-files {
+        margin-top: 30vh;
+        padding: 2em;
+        display: grid;
+        grid-template-areas: "one two"
+                             "one two"
+                             "one two"
+                             "three three";
+    }
+    
+    h2 {
+        font-family: var(--heading-font);
+        font-weight: bolder;
+    }
+    
+    h3 {
+        font-family: var(--main-font);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    
+    .section#wireframes {
+        grid-area: one;
+        width: 40%;
+    }
+    
+    .section#design {
+        grid-area: two;
+    }
+    
+    .section#code-files {
+        grid-area: three;
+    }
+    
+    article.sub-section {
+        width: 50%;
+        border: 2px solid var(--detail-color);
+        margin: 1em;
+        padding: 0.5em 1em 1em 2em;
+        
+    }
+    
+    #wireframes h2 {
+        margin-right: -2px;
+    }
+    
+    #code-files h2 {
+        margin-right: 1em;
+    }
+    
+    .sub-section h3 {
+        display: block;
+        font-family: var(--heading-font);
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .sub-section a{
+        display: list-item;
+        font-family: var(--main-font);
+        color: var(--light-detail-color);
+    }
+    
+    #table #table-heading {
+        font-family: var(--heading-font);
+        border-bottom: 2px solid var(--detail-color);
+        padding: 1em;
+    }
+
+    #books-table {
+       width: 90%;
+       margin-right: 1em;
+       margin-left: 2em;
+    }
+
+    #books-table th{
+        padding: 0.3em;
+        background-color: var(--text-color);
+        color: var(--bg-color);
+        font-family: var(--heading-font);
+        font-weight: bolder;
+        font-size: small;
+        text-align: center;
+    }
+    
+    #books-table td{
+        padding: 0.3em;
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: small;
+        text-align: center;
+        border: 1px solid var(--dark-detail-color);
+    }
+    
+    #contacts-nav {
+        width: auto;
+    }
+
+    #pdf-files {
+        width: 80vw;
+    }
+
+    article.sub-section {
+        width: 30vw;
+        border: 2px solid var(--detail-color);
+        margin: 1em;
+        padding: 0.5em 1em 1em 2em;
+        
+    }
+    
+    #wireframes h2 {
+        margin-right: -2px;
+    }
+    
+    #code-files h2 {
+        margin-right: 1em;
+    }
+
+    .sub-section h3 {
+        display: block;
+        font-family: var(--heading-font);
+        text-decoration: none;
+        text-align: left;
+    }
+    
+    .sub-section a{
+        display: list-item;
+        font-family: var(--main-font);
+        color: var(--light-detail-color);
+    }
+}      

@@ -1,0 +1,123 @@
+<!--
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This markup file contains the starting code for Assignment 4.
+ * 
+ * Why this file?
+ * In this file, link to all the PDF files that you will generate in this assignment. 
+ * You can either include them as iFrames or just link to the files using anchor links.
+ * The files must be linked in the <main> element, with one section for each PDF file that you 
+ *  generated for this assignment.
+ * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4: Data from JSON Data Source</title>
+
+	<!-- link to the main CSS file -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- link to Google Fonts URL:(https://fonts.google.com/share?selection.family=Alumni+Sans+Inline+One:ital@1|Anton|Averia+Sans+Libre:wght@300|Bebas+Neue|Knewave|Ranga|Sarina|Spectral+SC:ital,wght@0,400;1,200;1,500|Staatliches|Urbanist:ital,wght@1,200|Yesteryear) date accessed: Nov 28, 2023-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,400;1,200;1,500&family=Spectral:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<header class="pg-banner" id="pg-header">
+		<!-- Logo image created by Nora Forghani using online logo making tool : [looka.com] url:(https://looka.com/editor/160773470), Date accessed: Nov 29, 2023-->
+		<img src="img/logo-img.png" id="logo-img" alt="logo-img-with-steelBlue-background-and-text-Library-PickYourBook-">
+
+		<h1 id="main-title">Library Explorer</h1>
+
+		<nav class="primary-nav" id="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="files.html">Files</a></li>
+				<li><a href="#contacts-nav">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main class="pg-main-content" id="pg-main">
+		
+        <div id="pdf-files"> 
+			
+            <section class="section" id="wireframes">
+				<h2>Wireframes</h2>
+               
+                <article class="sub-section">
+                    <h3>Index.html</h3>
+                    <a href="files/files-wireframe-desktop.pdf">Desktop View Wireframe</a>
+                    <a href="files/files-wireframe-mobile.pdf">Mobile View Wireframe</a>
+                </article>
+            
+        
+                <article class="sub-section">
+                    <h3>Files.html</h3>
+                    <a href="files/files-wireframe-desktop.pdf">Desktop Wireframe</a>
+                    <a href="files/files-wireframe-mobile.pdf">Mobile Wireframe</a>
+                </article>
+
+			</section>
+
+			<section class="section" id="design">
+				<h2>Design Guidlines</h2>
+
+				<article class="sub-section">
+					<h3>Color Scheme</h3>
+					<a href="files/color-scheme.pdf">Color Scheme</a>
+				</article>
+
+				<article class="sub-section">
+					<h3>Fonts</h3>
+					<a href="files/fonts.pdf">Fonts</a>
+				</article>
+			</section>
+
+			<section class="section" id="code-files">
+				<h2>Website Code</h2>
+				<article class="sub-section">
+					<h3>HTML Files</h3>
+					<a href="files/index-code.pdf">index.html</a>
+                    <a href="files/files-code.pdf">files.html</a>
+				</article>
+				<article class="sub-section">
+					<h3>CSS File</h3>
+                    <a href="files/css-code.pdf">styles.css</a>
+
+				</article>
+			</section>
+
+		</div>
+
+	</main>
+
+	<footer class="pg-footer" id="pg-contentdesc">
+
+		<nav class="secondary-nav" id="contacts-nav">
+			<ul>
+				<!-- social media logos from [popsugartech.com] url:(https://images.app.goo.gl/S3dgARgRGxbbZVn9A), Date accessed: Dec 1, 2023-->
+				<li><a href="https://www.instagram.com/hfxpublib/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="img/instagram-logo.jpg" alt="black-instagram-logo-on-white-background"></a>Instagram</li>
+				<li><a href="tel:9024413541"> <img src="img/phone-logo.jpg" alt="black-phone-logo-on-white-background"></a>Phone</li>
+				<li><a href="mailto:nora.forghani13@gmail.com"><img src="img/email-logo.jpg" alt="black-mail-logo-on-white-background"></a>Email</li>
+			</ul>
+		</nav>
+
+	</footer>
+	
+	<!-- link to data-library.js file imported from brightspace -->
+	<script src="js/data-library.js"></script>
+
+	<!-- link to main javaScript file-->
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!--
+ * CSCI 1170: Introduction to Web Design and Development
+ * Fall 2023
+ *
+ * This markup file contains the starting code for Assignment 4.
+ * 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A4: Data from JSON Data Source</title>
+
+	<!-- link to the main CSS file -->
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- link to Google Fonts URL:(https://fonts.google.com/share?selection.family=Alumni+Sans+Inline+One:ital@1|Anton|Averia+Sans+Libre:wght@300|Bebas+Neue|Knewave|Ranga|Sarina|Spectral+SC:ital,wght@0,400;1,200;1,500|Staatliches|Urbanist:ital,wght@1,200|Yesteryear) date accessed: Nov 28, 2023-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,400;1,200;1,500&family=Spectral:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<header class="pg-banner" id="pg-header">
+		<!-- Logo image created by Nora Forghani using online logo making tool : [looka.com] url:(https://looka.com/editor/160773470), Date accessed: Nov 29, 2023-->
+		<img src="img/logo-img.png" id="logo-img" alt="logo-img-with-steelBlue-background-and-text-Library-PickYourBook-">
+
+		<h1 id="main-title">Library Explorer</h1>
+
+		<nav class="primary-nav" id="main-nav">
+			<ul>
+				<li><a href="#books-table">Books</a></li>
+				<li><a href="files.html">Files</a></li>
+				<li><a href="#contacts-nav">Contact Us</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<main class="pg-main-content" id="pg-main">
+		
+		<!-- homepage image from [unplash.com] url:(https://unsplash.com/photos/brown-wooden-book-shelf-with-books-6JffLQi_XqY), Date accessed: Dec 1, 2023-->
+		<div id="home-img">
+			<img src="img/homepg-img.jpeg">
+		</div>
+
+		<div id="jump-here"></div>
+
+		<section id="table">
+			<h2 id="table-heading">Library Books</h2>
+			
+			<aside class="filtered-search">
+				<form id="search-bar" method="get">
+					<label for="author-input">Enter Author's Name:</label>
+					<input type="text" name="author-name" id="author-input">
+					<button type="submit" id="submit-btn">Filter Results</button>
+				</form>
+			</aside>
+		
+			<div id="books-table">
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer class="pg-footer" id="pg-contentdesc">
+		
+		<div id="jump-up">
+			<button><a href="#jump-here" id="jump-up-button">Jump Up!</a></button>
+		</div>
+
+		<nav class="secondary-nav" id="contacts-nav">
+			<ul>
+				<!-- social media logos from [popsugartech.com] edited by Nora Forghani url:(https://images.app.goo.gl/S3dgARgRGxbbZVn9A), Date accessed: Dec 1, 2023-->
+				<li><a href="https://www.instagram.com/hfxpublib/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="><img src="img/instagram-logo.jpg"></a>Instagram</li>
+				<li><a href="tel: 9024413541"> <img src="img/phone-logo.jpg"></a>Phone</li>
+				<li><a href="mailto: nora.forghani13@gmail.com"><img src="img/email-logo.jpg"></a>Email</li>
+			</ul>
+		</nav>
+
+	</footer>
+	
+	<!-- link to data-library.js file imported from brightspace -->
+	<script src="js/data-library.js"></script>
+
+	<!-- link to main javaScript file-->
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>
